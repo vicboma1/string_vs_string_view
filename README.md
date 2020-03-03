@@ -1,15 +1,27 @@
 # string vs string_view
 
-```
-Time taken by function substring:            1867451 microseconds     1867 milli 
-Time taken by function substring_view:       13608 microseconds       13 milli
-Time taken by function substring_view_const: 9614 microseconds        9 milli
 
-Time taken by function substring:             1746522 microseconds     1746 milli
-Time taken by function substring_view:        12727 microseconds       12 milli
-Time taken by function substring_view_const:  9970 microseconds        9 milli
+it -> 1
 
-Time taken by function substring:             1795858 microseconds     1795 milli
-Time taken by function substring_view:        11767 microseconds       11 milli
-Time taken by function substring_view_const:  8827 microseconds        8 milli
-```
+| Function   |      Milliseconds      |  Microseconds |
+|----------|:-------------:|------:|
+| substring  |  1867 | 1867451 |
+| substring_view  |    13   |   13608 |
+| substring_view_const  | 9 |    9614 |
+
+
+it -> 2
+
+| Function   |      Milliseconds      |  Microseconds |
+|----------|:-------------:|------:|
+| substring  |  1746 | 1746522 |
+| substring_view  |    12   |   12727 |
+| substring_view_const  | 9 |    9970 |
+
+it -> 3
+
+| Function   |      Milliseconds      |  Microseconds |
+|----------|:-------------:|------:|
+| substring  |  1795 | 1795858 |
+| substring_view  |    11   |   11767 |
+| substring_view_const  | 8 |    8827 |
